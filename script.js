@@ -45,3 +45,18 @@ document.addEventListener('DOMContentLoaded', updateContent);
 // Update every minute to keep the greeting accurate
 setInterval(updateContent, 60000);
 
+// Function to change background color to yellow
+function changeBackgroundToYellow() {
+    document.body.style.background = '#ffd700';
+    document.body.style.backgroundSize = '100% 100%';
+    document.body.style.animation = 'none';
+}
+
+// Add event listener to the button
+document.addEventListener('DOMContentLoaded', function() {
+    const bgButton = document.getElementById('bgButton');
+    if (bgButton) {
+        bgButton.addEventListener('click', changeBackgroundToYellow);
+    }
+});
+

@@ -72,6 +72,53 @@ body {
     color: #666;
     font-weight: 400;
     animation: fadeIn 1.4s ease-in;
+    margin-bottom: 30px;
+}
+
+.button-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+    animation: fadeIn 1.6s ease-in;
+}
+
+.greet-button {
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.greet-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.greet-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#helloButton {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+#helloButton:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+#goodbyeButton {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+#goodbyeButton:hover {
+    background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
 }
 
 @keyframes fadeIn {
@@ -102,6 +149,17 @@ body {
     .content {
         padding: 40px 30px;
     }
+    
+    .button-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .greet-button {
+        width: 100%;
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -123,6 +181,11 @@ body {
     
     body {
         padding: 10px;
+    }
+    
+    .greet-button {
+        padding: 10px 20px;
+        font-size: 0.85rem;
     }
 }
 

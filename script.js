@@ -45,3 +45,27 @@ document.addEventListener('DOMContentLoaded', updateContent);
 // Update every minute to keep the greeting accurate
 setInterval(updateContent, 60000);
 
+// Function to show hello greeting
+function showHello() {
+    alert("Hello! 👋\n\nNice to meet you!");
+}
+
+// Function to show goodbye message
+function showGoodbye() {
+    alert("Goodbye! 👋\n\nSee you later!");
+}
+
+// Add event listeners to buttons
+document.addEventListener('DOMContentLoaded', function() {
+    const helloButton = document.getElementById('helloButton');
+    const goodbyeButton = document.getElementById('goodbyeButton');
+    
+    if (helloButton) {
+        helloButton.addEventListener('click', showHello);
+    }
+    
+    if (goodbyeButton) {
+        goodbyeButton.addEventListener('click', showGoodbye);
+    }
+});
+
